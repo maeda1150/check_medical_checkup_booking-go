@@ -1,0 +1,9 @@
+version: '3'
+services:
+  scraping:
+    command: ./run.sh
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/go/src/check_medical_checkup_booking
